@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/">F8 education</a>
+  <div class="container">
+    <a class="navbar-brand" href="/">F8 education</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -13,13 +14,21 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home
-          <span class="sr-only">(current)</span></a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="https://i.pinimg.com/564x/39/a7/ee/39a7eebfbccf2e96897fecadc8c1eec1.jpg" alt="" class="user-avatar">
+          DangKhoa
+        </a> 
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/courses/create">Đăng khóa học</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/me/stored/courses">Khóa học của tôi</a>
+          <a class="dropdown-item" href="/me/stored/news">Bài viết của tôi</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Đăng xuất</a>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/courses/create">Đăng khóa học</a>
-      </li>
+  </div>
   </div>
 </nav>
